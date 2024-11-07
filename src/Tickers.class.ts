@@ -9,6 +9,7 @@ export class Tickers {
   private symbols: string[] = ['TSM', 'DTO', 'VRD', 'JFC'];
   private symbolTracking: { [key: string]: SymbolData } = {};
   private minMoveCount = 5;
+  private resetMoveCountProbability = 0.1;
   private moveRange = [0.2, 1];
 
   constructor() {
@@ -27,7 +28,7 @@ export class Tickers {
 
   cycleTickers() {
     for (const symbol of this.symbols) {
-      if (this.symbolTracking[symbol].moveCount > this.minMoveCount) {
+      if (this.symbolTracking[symbol].moveCount > this.minMoveCount && Math.random() < this.resetMoveCountProbability) {
         this.symbolTracking[symbol].direction = Math.random() > 0.5 ? 'up' : 'down';
         this.symbolTracking[symbol].moveCount = 0;
       }
