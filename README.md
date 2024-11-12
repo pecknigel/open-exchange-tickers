@@ -1,8 +1,14 @@
 
 # Open Exchange Tickers
 
-Part of the [Trading Exchange Collaborative Learning Program](https://github.com/pecknigel/trading-exchange-collaborative-learning).
+This is an implementation pf a data service for the [Trading Exchange Collaborative Learning Program](https://github.com/pecknigel/trading-exchange-collaborative-learning) from the [Prescription Free Academy of Web Development and Software Engineering](https://prescriptionfree.academy/).
 
-This is a small service for generating trading tickers that change price over time without any actual markets needing to exist.
+It is a small service for generating trading tickers that change price over time without any actual markets needing to exist.
 
-It’s intended to behave like actual markets could and give the appearance of active markets.
+It’s intended to behave like actual markets could and give the appearance of active markets (as long as you don’t look too closely).
+
+It’s all part of a collaborative project for learning web development and software engineering. All backed by a highly experienced teacher who has stepped away after twenty years in software development to concentrate on teaching.
+
+Mentoring is available as needed, seven days a week.
+
+See the links at the top for more info.
