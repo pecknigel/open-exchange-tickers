@@ -12,3 +12,11 @@ It’s all part of a collaborative project for learning web development and soft
 Mentoring is available as needed, seven days a week.
 
 See the links at the top for more info.
+
+## Contributions
+
+Contributions are welcome. ~~See [CONTRIBUTING.md](CONTRIBUTING.md)~~ (currently a stub).
+
+## Licensing
+
+This project is dual licensed. See [LICENSE.txt](LICENSE.txt).
