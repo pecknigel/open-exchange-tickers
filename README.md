@@ -7,6 +7,10 @@ It is a small service for generating trading tickers that change price over time
 
 It’s intended to behave like actual markets could and give the appearance of active markets (as long as you don’t look too closely).
 
+See [Data Access Layer](https://github.com/pecknigel/trading-exchange-collaborative-learning?tab=readme-ov-file#data-access-layer) for more about the system layer that this project implements.
+
+See [Data Access Layer Interface Agreements](https://github.com/pecknigel/trading-exchange-collaborative-learning?tab=readme-ov-file#data-access-layer-interface) for specification of the interface that this should provide.
+
 ## What’s all this about?
 
 It’s all part of a collaborative project for learning web development and software engineering. All backed by a highly experienced teacher who has stepped away after twenty years in software development to concentrate on teaching.
