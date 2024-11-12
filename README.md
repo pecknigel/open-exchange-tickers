@@ -7,6 +7,8 @@ It is a small service for generating trading tickers that change price over time
 
 It’s intended to behave like actual markets could and give the appearance of active markets (as long as you don’t look too closely).
 
+## What’s all this about?
+
 It’s all part of a collaborative project for learning web development and software engineering. All backed by a highly experienced teacher who has stepped away after twenty years in software development to concentrate on teaching.
 
 Mentoring is available as needed, seven days a week.
