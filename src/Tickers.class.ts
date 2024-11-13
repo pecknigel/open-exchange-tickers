@@ -38,7 +38,7 @@ export class Tickers {
     }
   }
 
-  getSymbolValues() {
+  getNextSymbolValues() {
     this.cycleTickers();
     return { ...this.symbolTracking };
   }
