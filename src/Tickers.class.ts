@@ -12,8 +12,13 @@ export class Tickers {
   private resetMoveCountProbability = 0.1;
   private moveRange = [0.2, 1];
 
-  constructor() {
+  constructor(seedData?: { [key: string]: SymbolData }) {
     this.initialiseTickers();
+    if (seedData) {
+      for (const symbol of this.symbols) {
+        if (seedData[symbol]) this.symbolTracking[symbol] = seedData[symbol];
+      }
+    }
   }
 
   initialiseTickers() {
