@@ -3,7 +3,7 @@
 
 This is an implementation of a data service for the [Trading Exchange Collaborative Learning Program](https://github.com/pecknigel/trading-exchange-collaborative-learning) from the [Prescription Free Academy of Web Development and Software Engineering](https://prescriptionfree.academy/).
 
-If you want to create your own version of this, there’s a practice project at [Exchange Tickers Practice Project](https://github.com/pecknigel/exchange-tickers-practice-project).
+If you want to create your own version of this, there’s a practice project that can help at [Exchange Tickers Practice Project](https://github.com/pecknigel/exchange-tickers-practice-project).
 
 It is a small service for generating trading tickers that change price over time without any actual markets needing to exist.
 
