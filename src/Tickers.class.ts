@@ -13,16 +13,16 @@ export class Tickers {
   private moveRange = [0.2, 1];
 
   constructor(seedData?: { [key: string]: SymbolData }) {
-    this.initialiseTickers();
     if (seedData) {
       for (const symbol of this.symbols) {
         if (seedData[symbol]) this.symbolTracking[symbol] = seedData[symbol];
       }
     }
+    this.initialiseTickers();
   }
 
-  initialiseTickers() {
-    for (const symbol of this.symbols) {
+  private initialiseTickers() {
+    for (const symbol of this.symbols.filter((symbol) => !this.symbolTracking[symbol])) {
       this.symbolTracking[symbol] = {
         value: Math.random() * 60 + 40,
         direction: 'up',
@@ -31,7 +31,7 @@ export class Tickers {
     }
   }
 
-  cycleTickers() {
+  private cycleTickers() {
     for (const symbol of this.symbols) {
       if (this.symbolTracking[symbol].moveCount > this.minMoveCount && Math.random() < this.resetMoveCountProbability) {
         this.symbolTracking[symbol].direction = Math.random() > 0.5 ? 'up' : 'down';
@@ -43,7 +43,7 @@ export class Tickers {
     }
   }
 
-  getNextSymbolValues() {
+  public getNextSymbolValues(dataType: 'object' | 'string' = 'object') {
     this.cycleTickers();
     return { ...this.symbolTracking };
   }
