@@ -45,6 +45,19 @@ export class Tickers {
 
   public getNextSymbolValues(dataType: 'object' | 'string' = 'object') {
     this.cycleTickers();
+    // return object with symbol keys to values
+    const symbolValues = this.symbols.reduce((acc: { [key: string]: number }, symbol: string) => {
+      acc[symbol] = this.symbolTracking[symbol].value;
+      return acc;
+    }, {});
+    return dataType === 'object' ? symbolValues : this.flattenSymbolValuesToString(symbolValues);
+  }
+
+  public getRawSymbolValues() {
     return { ...this.symbolTracking };
+  }
+
+  private flattenSymbolValuesToString(symbolValues: { [key: string]: number }) {
+    return Object.keys(symbolValues).map((symbol) => `${symbol}: ${symbolValues[symbol]}`).join(', ');
   }
 }
