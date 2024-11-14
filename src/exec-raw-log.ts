@@ -21,20 +21,11 @@
 *
 * */
 
-// ### PART 1: Dynamically Import the Tickers class ###
+// ### PART 1: Import the Tickers class and instantiate it ###
 
-// Use dynamic import to bring in the Tickers class and instantiate it on one line (just because we can).
-// This is a feature of ECMAScript 2020, 2022 or something like that.
-// Look it up and submit a PR! This is a collaborative project after all.
+import { Tickers } from './Tickers.class';
 
-const tickers = new (await import('./Tickers.class')).Tickers();
-
-// To do that requires TypeScript (tsconfig.json) to have a "target" of "es2017" or later
-// and "module" to be one of a range of options such as "es2022" (which is used here).
-// Since both of those have been done, it means you need to use Node.js 16 or later
-// to run the JavaScript that is generated (see the 'dist' directory when you 'npm run build').
-
-// It also means making this script a module (see PART 5 at the very end of the file).
+const tickers = new Tickers();
 
 // ### PART 2: Define the Configuration Object ###
 
@@ -90,12 +81,4 @@ setInterval(logNextTickers, config.logInterval);
 // There's no need to save the timer ID (which can be used to stop the interval later).
 // To stop it, just send an interrupt signal or SIGINT (Ctrl+C) in the terminal.
 
-// ### PART 5: Make this script a module so that we can use dynamic import (see PART 1) ###
-
-// We don't actually need to use this script as a module, so we just export an empty object.
-// Welcome to JavaScript! It's an evolving language so stuff like this happens.
-// You should have seen the stuff that we used to have to do in the 90's and 2000's!
-
-export { };
-
-// ### PART 6: The End (TTFN) ###
+// ### PART 5: The End (TTFN) ###
