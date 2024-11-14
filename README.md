@@ -21,6 +21,51 @@ Mentoring is available as needed, seven days a week.
 
 See [Prescription Free Academy](https://prescriptionfree.academy/).
 
+## How to Try Out the Project
+
+(note this is not "running" or "using" the project - that's discussed next)
+
+Clone the repository and install the dependencies.
+
+```
+git clone git@github.com:pecknigel/open-exchange-tickers.git
+npm install
+```
+
+Build the project.
+
+```
+npm run build
+```
+
+This will create a `dist` directory with the compiled project.
+
+In order to try out the project, there are a few ways that you can do it. Here are the scripts.
+
+IMPORTANT: See the individual scripts in `package.json` to know what these run. See the script files themselves for details of what they actually do (they are liberally commented).
+
+### Command Line Output (more like how it's actually used)
+
+```
+npm run exec-cmd
+```
+
+### Log (see how values change over time)
+
+```
+npm run exec-log
+```
+
+### Raw Log (see how values change over time including internal details)
+
+```
+npm run exec-raw-log
+```
+
+## How to Use the Project
+
+[More info coming]
+
 ## Project Management and Discussion
 
 We’re looking to keep project management simple and housed on GitHub.

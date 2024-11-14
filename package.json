@@ -1,14 +1,16 @@
 {
   "name": "exchange-tickers",
   "version": "0.0.0",
-  "main": "src/index.ts",
+  "main": "src/exec-log.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "cmd": "node dist/cmd.js"
+    "exec-cmd": "npm run build && node dist/exec-cmd.js",
+    "exec-log": "npm run build && node dist/exec-log.js",
+    "exec-raw-log": "npm run build && node dist/exec-raw-log.js",
+    "test": "echo \"Error: No tests yet\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Nigel Peck et al.",
+  "license": "",
   "description": "",
   "devDependencies": {
     "@types/node": "^22.9.0",

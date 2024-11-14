@@ -31,7 +31,7 @@ export class Tickers {
     }
   }
 
-  private cycleTickers() {
+  public cycleTickers() {
     for (const symbol of this.symbols) {
       if (this.symbolTracking[symbol].moveCount > this.minMoveCount && Math.random() < this.resetMoveCountProbability) {
         this.symbolTracking[symbol].direction = Math.random() > 0.5 ? 'up' : 'down';

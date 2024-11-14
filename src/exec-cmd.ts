@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 // TODO Export types from Tickers class and use them here
 
 import { Tickers } from './Tickers.class';
