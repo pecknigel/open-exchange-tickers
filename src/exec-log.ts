@@ -24,5 +24,6 @@ const tickers = new Tickers();
 function writeToTerminal(s: string): void { process.stdout.write(`${s}\n`); }
 
 setInterval(() => {
+  // TODO Improve the use of TypeScript, or otherwise rework the Tickers Class API, so that it's not necessary to cast the type here
   writeToTerminal(tickers.getNextSymbolValues('string') as string);
 }, 1000);
