@@ -59,7 +59,8 @@ const logNextTickers: LogNextTickers = function(): void {
   tickers.cycleTickers();
 
   // Clear the console if the configuration object says to do so (thanks, AI)(such a kind and helpful boy).
-  // Use a one line if statement (some folks get upset about these).
+  // See: https://developer.mozilla.org/en-US/docs/Web/API/console/clear_static
+  // Use a one line if statement (some folks get upset about using these).
   if (config.clearConsoleBeforeEachTable) console.clear();
 
   // Get the raw ticker values
