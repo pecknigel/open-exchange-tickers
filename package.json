@@ -3,17 +3,19 @@
   "version": "0.0.0",
   "main": "src/exec-log.ts",
   "scripts": {
-    "build": "tsc",
     "exec-cmd": "npm run build && node dist/exec-cmd.js",
     "exec-log": "npm run build && node dist/exec-log.js",
     "exec-raw-log": "npm run build && node dist/exec-raw-log.js",
-    "test": "echo \"Error: No tests yet\" && exit 1"
+    "test": "echo \"Error: No tests yet\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc"
   },
   "author": "Nigel Peck et al.",
   "license": "",
   "description": "",
   "devDependencies": {
     "@types/node": "^22.9.0",
+    "rimraf": "^6.0.1",
     "typescript": "^5.6.3"
   }
 }
