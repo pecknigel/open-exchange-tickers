@@ -63,26 +63,24 @@ type LogNextTickers = () => void;
 // Create the actual routine. Let's use a function expression.
 
 const logNextTickers: LogNextTickers = function(): void {
-  // Cycle the tickers without getting any output (because we want the raw output, see below).
 
+  // Cycle the tickers without getting any output (because we want the raw output, see below).
   tickers.cycleTickers();
 
   // Clear the console if the configuration object says to do so (thanks, AI)(such a kind and helpful boy).
   // Use a one line if statement (some folks get upset about these).
-
   if (config.clearConsoleBeforeEachTable) console.clear();
 
   // Get the raw ticker values
   // These include not just the values, but the internal state of the tickers
   // that shows how the values were generated and how they are being cycled.
   // TODO Give the type a name and set it up on the Tickers class, imported to here
-
   const rawTickerValues = tickers.getRawSymbolValues();
 
   // Log the raw ticker values to stdout as a table using console.table()
   // See: https://developer.mozilla.org/en-US/docs/Web/API/console/table_static
-
   console.table(rawTickerValues);
+
 }
 
 // ### PART 4: Cycle and log the tickers every configured log interval (default is 1000ms or 1 second) ###
