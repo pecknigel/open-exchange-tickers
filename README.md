@@ -40,19 +40,22 @@ In order to try out the project, there are a few ways that you can do it. Here a
 
 IMPORTANT: See the individual scripts in `package.json` to know what these run. See the script files themselves for details of what they actually do (they are liberally commented).
 
-### Command Line Output (more like how it's actually used)
+### Command Line Output
+Like how it's actually used.
 
 ```
 npm run exec-cmd
 ```
 
-### Log (see how values change over time)
+### Log
+See how values change over time.
 
 ```
 npm run exec-log
 ```
 
-### Raw Log (see how values change over time including internal details)
+### Raw Log
+See how values change over time including internal details
 
 ```
 npm run exec-raw-log
