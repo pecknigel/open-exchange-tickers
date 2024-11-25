@@ -11,9 +11,13 @@ It’s intended to behave like actual markets could and give the appearance of a
 
 ## What’s all this about?
 
-It’s all part of a [collaborative project](https://github.com/pecknigel/trading-exchange-collaborative-learning) for learning web development and software engineering. All backed by a highly experienced teacher who has stepped away after twenty years in software development to concentrate on teaching.
+It’s all part of a [collaborative program](https://github.com/pecknigel/trading-exchange-collaborative-learning) for learning web development and software engineering. All backed by a highly experienced teacher who has stepped away after twenty years in software development to concentrate on teaching.
 
 [Mentoring is available](https://prescriptionfree.academy/) as needed, seven days a week.
+
+## Getting Started
+
+See the [program repo](https://github.com/pecknigel/trading-exchange-collaborative-learning) for info on getting started and about this learning program in general.
 
 ## How to Try Out the Project
 
