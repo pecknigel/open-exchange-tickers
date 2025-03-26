@@ -13,7 +13,7 @@ It’s intended to behave like actual markets could and give the appearance of a
 
 It’s all part of a [collaborative project](https://github.com/pecknigel/trading-exchange-collaborative-learning) for learning web development and software engineering. All backed by an experienced software engineer and teacher who has stepped away after twenty years in software development to concentrate on teaching.
 
-[Mentoring is available](https://prescriptionfree.academy/) as needed, seven days a week.
+[Teaching and mentoring is available](https://preply.com/en/tutor/4217857) as needed, Monday to Saturday.
 
 ## Getting Started
 
